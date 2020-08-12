@@ -52,7 +52,7 @@ var (
 	// The actual size might be larger than this. In general, the default
 	// value should be used, but this is defined as an exported variable
 	// so that tests can set a different segment size.
-	SegmentSizeBytes int64 = 64 * 1000 * 1000 // 64MB
+	SegmentSizeBytes int64 = 8 * 1000 * 1000 // 8MB
 
 	plog = capnslog.NewPackageLogger("go.etcd.io/etcd", "wal")
 
